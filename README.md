@@ -5,6 +5,18 @@ Nextflow script running EGGnog-mapper
 ### Input files
 
 All input files will be amino acid sequences in FASTA format.
+Input files must end with .faa[.gz] or .fasta[.gz].
+
+
+### Reference Database
+
+EGGnog mapper needs two reference files in order to run, `--eggnog_db` and `--eggnog_dmnd`.
+Examples are provided at:
+
+```
+--eggnog_db s3://fh-ctr-public-reference-data/tool_specific_data/eggnog-mapper/emapperdb-4.5.1/eggnog.db
+--eggnog_dmnd s3://fh-ctr-public-reference-data/tool_specific_data/eggnog-mapper/emapperdb-4.5.1/eggnog_proteins.dmnd
+```
 
 
 ### Behavior
