@@ -27,7 +27,13 @@ all FASTA files in that folder, and write all of the outputs to `--output_folder
 ### Running
 
 ```
-nextflow run FredHutch/nf-eggnog-mapper --input_folder <INPUT_FOLDER> --output_folder <OUTPUT_FOLDER>
+nextflow \
+    -C ~/nextflow.config \
+    run \
+    FredHutch/nf-eggnog-mapper \
+        --input_folder <INPUT_FOLDER> \
+        --output_folder <OUTPUT_FOLDER> \
+        -work-dir <WORK_DIRECTORY>
 ```
 
 ### Getting Started with Nextflow
