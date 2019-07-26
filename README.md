@@ -4,7 +4,7 @@ Nextflow script running EGGnog-mapper
 
 ### Input files
 
-All input files will be nucleotide sequences in FASTA format.
+All input files will be amino acid sequences in FASTA format.
 
 
 ### Behavior
