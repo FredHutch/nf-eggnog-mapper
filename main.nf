@@ -27,6 +27,7 @@ process eggnogAnnotation {
     container "quay.io/biocontainers/eggnog-mapper:1.0.3--py27_0"
     cpus 16
     memory "32 GB"
+    publishDir "${params.output_folder}"
     
     input:
     file query from fasta_ch
